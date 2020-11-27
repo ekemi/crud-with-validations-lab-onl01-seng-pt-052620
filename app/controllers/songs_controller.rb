@@ -38,9 +38,7 @@ def create
    @song = Song.find(params[:id])
  end
  def song_params
-prams.require(:song).permit(
-:title,:released,:release_year,:artist_name,:genre)
- end
+prams.require(:song).permit(:title,:released,:release_year,:artist_name,:genre)
 end
 
 end
