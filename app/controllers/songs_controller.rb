@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
 before_action :set_song!, only: [:show, :edit, :update, :destroy]
 
-def new 
+def new
  @song = Song.new
 end
 def create
@@ -19,7 +19,7 @@ def create
  def show
  end
  def edit
- end 
+ end
  def update
    if @song.update(song_params)
      redirect_to song_path(@song)
@@ -28,7 +28,7 @@ def create
    end
  end
 
- def destroy 
+ def destroy
    @song.destroy
    redirect_to song_path
  end
