@@ -1,6 +1,6 @@
 class Song < ApplicationRecord
 validates :title , presence: true
-valaides :artist_name, presence: true
+validates :artist_name, presence: true
 validate :no_repeated_title
 validates :release_year, presence: true,
 if: :released?
