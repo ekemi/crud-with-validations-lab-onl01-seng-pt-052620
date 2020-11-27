@@ -40,7 +40,6 @@ def create
  def song_params
 prams.require(:song).permit(
 :title,:released,:release_year,:artist_name,:genre)
-)
  end
 end
 
