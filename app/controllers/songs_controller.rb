@@ -13,7 +13,7 @@ def create
    end
  end
  def index
-  @songs = Song.All
+  @songs = Song.all
  end
 
  def show
